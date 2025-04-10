@@ -1,0 +1,74 @@
+/* ========================================== */
+/*                SECTION PROFIL             */
+/* ========================================== */
+
+
+
+.quote {
+    position: relative;
+    max-width: 600px;
+    text-align: justify;
+}
+
+
+/* === Guillemets décoratifs === */
+.quote-mark-open,
+.quote-mark-close {
+    font-size: 4em;
+    color: black;
+    opacity: 0.2;
+    font-family: 'Goudy Old Style', serif;
+    position: absolute;
+    z-index: 0;
+}
+
+.quote-mark-open {
+    top: -30px;
+    left: -30px;
+}
+
+.quote-mark-close {
+    bottom: -30px;
+    right: -30px;
+}
+
+
+/* === Texte de la citation, avec positionnement progressif === */
+.quote-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-text p {
+    margin: 8px 0;
+    position: relative;
+}
+
+.quote-text p:nth-child(1) {
+    margin-left: 15%;
+    text-align: left;
+}
+.quote-text p:nth-child(2) {
+    margin-left: 5%;
+    text-align: right;
+}
+.quote-text p:nth-child(3) {
+    margin-left: 20%;
+    text-align: center;
+}
+.quote-text p:nth-child(4) {
+    margin-left: 10%;
+    text-align: left;
+}
+.quote-text p:nth-child(5) {
+    margin-left: 25%;
+    text-align: right;
+}
+.quote-text p:nth-child(6) {
+    margin-left: 8%;
+    text-align: left;
+}

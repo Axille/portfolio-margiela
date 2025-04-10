@@ -1,0 +1,79 @@
+/* ========================================== */
+/*       SECTION ÉTUDES & EXPÉRIENCES        */
+/* ========================================== */
+
+/* --- Section double hauteur pour le parcours --- */
+.double-section {
+  height: 200vh;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Images du chemin en pas de Tabi --- */
+.chem {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.chem1 {
+  top: 0;
+  content: url("chem1.png");
+}
+
+.chem2 {
+  top: 100vh;
+  content: url("chem2.png");
+}
+
+/* --- Bulles d'étapes --- */
+.timeline-bubble {
+  position: absolute;
+  width: 280px;
+  max-width: 80vw;
+  background: white;
+  padding: 18px;
+  border: 1px solid black;
+  border-radius: 16px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.timeline-bubble h3 {
+  font-family: 'Goudy Old Style', serif;
+  margin: 0 0 6px 0;
+  font-size: 1.1em;
+}
+
+.timeline-bubble p {
+  margin: 8px 0 0;
+}
+
+.timeline-bubble strong {
+  font-weight: bold;
+}
+
+.timeline-bubble.left {
+  left: 10%;
+}
+
+.timeline-bubble.right {
+  right: 10%;
+}
+

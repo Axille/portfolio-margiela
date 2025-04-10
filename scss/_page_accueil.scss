@@ -1,0 +1,111 @@
+/* ========================================== */
+/*              PAGE D'ACCUEIL               */
+/* ========================================== */
+
+
+
+/* === Section étiquette === */
+.label-section {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding-top: 40px; 
+  }
+  
+  .label-title {
+    font-family: 'Goudy Old Style', serif;
+    font-size: 2.4em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .label-wrapper {
+    position: relative;
+    width: 520px;
+    height: 280px;
+  }
+
+
+/* === Image de fond de l’étiquette === */
+  .label-bg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+
+
+  .numbers-grid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600; 
+    font-size: 1.2em; 
+    letter-spacing: 0.03em;
+    gap: 6px; 
+  }
+  
+  .label-paris {
+    font-family: 'Goudy Old Style', serif;
+    font-size: 0.95em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    margin-bottom: 10px;   
+  }
+  
+  
+  .numbers-line {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .number-link {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    transition: transform 0.2s ease;
+    font-weight: bold; 
+  }
+  
+  .number-link:hover {
+    transform: scale(1.3);
+  }
+  
+  .number-link::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
+  }
+  
+  .number-link:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .number-link.active::after {
+    transform: translate(-50%, -50%) scale(1);
+  }
