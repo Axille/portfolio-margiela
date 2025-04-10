@@ -312,10 +312,9 @@ body, html {
   height: 100%;
 }
 
-.chem {
+
+.chem img {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100vh;
   object-fit: contain;
@@ -323,15 +322,17 @@ body, html {
   z-index: 1;
 }
 
+
 .chem1 {
   top: 0;
-  content: url("chem1.png");
 }
 
 .chem2 {
   top: 100vh;
-  content: url("chem2.png");
 }
+
+
+
 
 .timeline-bubble {
   position: absolute;
